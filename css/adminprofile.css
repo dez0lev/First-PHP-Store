@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+p {
+    font-family: "Montserrat", sans-serif;
+}
+
+.profile {
+    max-width: 81.25rem;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.profile_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+}
+
+
+.userinfo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+form {
+    padding: unset;
+    width: unset;
+}
+
+.userinfo button {
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #fdfdfd;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: color .3s;
+    padding: 10px;
+}
+
+.userinfo button a {
+    color: #3a3a3a;
+}
+
+button:hover {
+    background-color: #c3c3c3;
+}
+
+.tab-btn.active {
+    background-color: #a0a0a0;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 50px;
+    box-shadow: -3px -1px 26px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 50px;
+}
+
+.tab-item {
+    display: none;
+}
+
+.tab-item.active {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.tab-item img {
+    width: 30%;
+    border-radius: 20px;
+}
+
+.tab-item .orders {
+    box-shadow: -3px -1px 26px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    gap: 50px;
+    align-items: center;
+}
+
+.tab-item .orders button {
+    width: 40%;
+    transition: color .3s;
+}
+
+
+.orders .orders-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tab-content button {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.tab-item .changepass {
+    width: 20%;
+    position: static;
+}
+
+.editItem {
+    display: none;
+}
+
+
+.editItem.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+
+.editItem input {
+    cursor: pointer;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.error {
+    border: 1px solid #ef6e6e;
+    color: brown;
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.success {
+    border: 1px solid #a8ef6e;
+    color: rgb(85, 255, 47);
+    padding: 10px;
+    width: 50%;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+@media (max-width: 1200px) {
+    .profile {
+        max-width: 1100px;
+    }
+
+    .profile_container {
+        flex-direction: column;
+    }
+
+    .userinfo {
+        margin-top: 40px;
+    }
+
+
+    .userinfo button {
+        font-size: 22px;
+    }
+
+    .tab-item .changepass {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .profile {
+        max-width: 900px;
+    }
+
+    .userinfo button {
+        font-size: 20px;
+    }
+
+    .profile_hello {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 850px) {
+    .profile {
+        max-width: 750px;
+    }
+
+    .userinfo {
+        gap: 20px;
+    }
+
+    .userinfo button {
+        font-size: 18px;
+    }
+
+    .profile_hello {
+        font-size: 18px;
+    }
+
+    .tab-item .changepass {
+        width: 40%;
+    }
+}
+
+@media (max-width: 500px) {
+    .profile {
+        max-width: 400px;
+    }
+
+    .userinfo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .tab-content {
+        font-size: 20px;
+    }
+
+    .tab-content button {
+        font-size: 18px;
+    }
+    .tab-item .changepass {
+        width: 100%;
+    }
+
+    form input {
+        border-radius: 10px;
+        padding-left: 5px;
+    }
+
+    .tab-item img {
+        width: 100%;
+    }
+
+    .tab-item .orders {
+        flex-direction: column;
+    }
+    
+    .orders .orders-info {
+        gap: 30px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,67 @@
+.product {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-shadow: -3px -1px 26px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.product img {
+    width: 40%;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: right;
+    gap: 40px;
+}
+
+.product-info .name {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+.product-info .price {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.active {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+@media (max-width: 850px) {
+    .product {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product img {
+        width: 100%;
+    }
+    
+    .product-info {
+        text-align: center;
+    }
+}
+
+
+
+
+
+

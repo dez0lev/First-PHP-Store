@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+a {
+    font-family: "Montserrat", sans-serif;
+}
+
+.delete-button {
+    background-color: #fdfdfd;
+    color: #3a3a3a;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    transition: all .2s;
+    margin-top: auto;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.delete-button:hover {
+    background-color: #c6c3c3;
+}
+
+.pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pagination a {
+    font-size: 18px;
+    font-weight: bold;
+    color: #9e9e9e;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #fdfdfd;
+    color: #3a3a3a;
+}
+
+.pagination .active {
+    background-color: #fdfdfd;
+    color: #3a3a3a;
+    cursor: default;
+}
+
+.pagination .disabled {
+    opacity: 1;
+}
+
