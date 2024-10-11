@@ -1,3 +1,4 @@
+<h3> Выглядит не очень, т.к главной целью было поработать с серверной частью, дизайн делался на ходу из головы </h3>
 Главная страница <img width="1440" alt="image" src="https://github.com/user-attachments/assets/7d55d6e6-cb33-4eb0-8565-dbfda761abe7">
 Каталог <img width="1440" alt="image" src="https://github.com/user-attachments/assets/1763f964-ec9e-4272-b54e-279f3cc99ef9">
 Блок товара <img width="1440" alt="image" src="https://github.com/user-attachments/assets/83ff3d78-8d33-454b-a56d-3ddb86bda704">
